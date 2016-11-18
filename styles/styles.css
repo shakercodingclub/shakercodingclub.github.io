@@ -15,7 +15,7 @@ h1{
 
 .parallax{
   perspective: 1px;
-  height: 100vh;
+  height: 200vh;
   overflow-x: hidden;
   overflow-y: auto;
   transform-origin-x: 100%;
@@ -39,7 +39,7 @@ h1{
 
 .splashbutton{
 	position: relative;
-	transform:  translateY(500%);
+	transform:  translateY(240%);
 }
 
 .button{
@@ -94,6 +94,15 @@ h1{
 	font-size: 30px;
 	color: white;
 	text-align: center;
+	position: relative;
+	transform:  translateY(-120%);
+}
+
+.splashimage{
+	position: relative;
+	top: 40%;
+	left: 44%;
+	transform: translateY(-50%);
 }
 
 .navbar-nav > li > a {padding-top:20px !important; padding-bottom:20px !important;}
@@ -106,11 +115,39 @@ h1{
 	/*
 	background-image: url(../images/index/html5.png);
 	*/
-	background-repeat: no-repeat;
-	padding-top:20px;
 	background: ghostwhite;
 }
 
 .lang_imgs{
 	/*height: 200px;*/
+}
+
+.imgSpiral1{
+	background-image: url(../images/index/html5.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right top;
+	-webkit-clip-path: polygon(30% 0, 100% 0%, 29% 100%, 0% 100%);
+	clip-path: polygon(30% 0, 100% 0%, 29% 100%, 0% 100%);
+}
+
+.colh1{
+	font-size: 45px;
+	color: white;
+	text-align: center;
+	position: relative;
+}
+
+.colp{
+	color: white;
+	text-align: center;
+}
+
+.splashCol1{
+	padding-top: 15px;
+	background-image: url(../images/index/events_blur.jpg);
+    height: 380px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left top;
 }
