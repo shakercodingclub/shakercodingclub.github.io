@@ -7,6 +7,10 @@ h1{
 	color: black;
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 .logo{
 	position: relative;
 	top: 80%;
@@ -59,7 +63,6 @@ h1{
 
 .button:hover{
 	color: white;
-	text-decoration: none;
 	background: linear-gradient(270deg, #ff4631, #fa8072);
 	background-size: 400% 400%;
 
@@ -143,11 +146,86 @@ h1{
 	text-align: center;
 }
 
+.splashCol{
+	
+}
+
 .splashCol1{
 	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
 	background-image: url(../images/index/events_blur.jpg);
     height: 380px;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: left top;
 }
+
+.splashCol2{
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-image: url(../images/index/keyboard_blur.jpg);
+    height: 380px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.splashCol3{
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-image: url(../images/index/code_blur.jpg);
+    height: 380px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.colButton{
+	background-color: #4995FC; 
+	color: white; 
+	padding: 11px 15px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-size: 16px;  
+	font-weight: 600;
+	display: block;
+	margin: 0 auto;
+	width: auto;
+	border-radius: 10px;
+	max-width: 150px;
+	position: absolute;
+	top: 63%; left: 0; bottom: 26%; right: 0;
+}
+
+.colButton:hover{
+	color: white;
+	background: linear-gradient(270deg, salmon, #4995FC);
+	background-size: 400% 400%;
+
+	-webkit-animation: AnimationName 5s ease infinite;
+	-moz-animation: AnimationName 5s ease infinite;
+	-o-animation: AnimationName 5s ease infinite;
+	animation: AnimationName 5s ease infinite;
+}
+
+.socialImage{
+	height: 70px;
+	width: 70px;
+	display: inline-block;
+	position: relative;
+	transform:  translateY(75%);
+}
+
+.logoSocial{
+	height: 120px;
+	text-align: center;
+}
+
+.reasonableSpace{
+	padding-right: 30px;
+}
+
+
