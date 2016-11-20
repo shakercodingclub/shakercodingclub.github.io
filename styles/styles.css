@@ -11,6 +11,10 @@ a:hover{
 	text-decoration: none;
 }
 
+.linkpad{
+	padding-right: 30px;
+}
+
 .logo{
 	position: relative;
 	top: 80%;
@@ -147,39 +151,25 @@ a:hover{
 }
 
 .splashCol{
-	
+	padding-top: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	height: 380px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left top;
 }
 
 .splashCol1{
-	padding-top: 15px;
-	padding-left: 25px;
-	padding-right: 25px;
 	background-image: url(../images/index/events_blur.jpg);
-    height: 380px;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: left top;
 }
 
 .splashCol2{
-	padding-top: 15px;
-	padding-left: 25px;
-	padding-right: 25px;
 	background-image: url(../images/index/keyboard_blur.jpg);
-    height: 380px;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: left top;
 }
 
 .splashCol3{
-	padding-top: 15px;
-	padding-left: 25px;
-	padding-right: 25px;
 	background-image: url(../images/index/code_blur.jpg);
-    height: 380px;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
 	background-position: right top;
 }
 
