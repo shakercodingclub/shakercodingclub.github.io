@@ -1,3 +1,4 @@
+/* TAGS */
 body{
 	padding-top: 40px;
 }
@@ -7,10 +8,25 @@ h1{
 	color: black;
 }
 
+footer{
+	text-align: center;
+	color: dimgrey;
+	
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+	background: lightgrey; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, lightgrey, dimgrey); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(white, lightgrey, dimgrey); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(white, lightgrey, dimgrey); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(white, lightgrey, dimgrey); /* Standard syntax */
+}
+
 a:hover{
 	text-decoration: none;
 }
 
+/* CLASS + ID */
 .linkpad{
 	padding-right: 30px;
 }
@@ -46,12 +62,15 @@ a:hover{
 }
 
 .splashbutton{
+	background-color: salmon; 
 	position: relative;
 	transform:  translateY(240%);
+	border-radius: 4px;
+	max-width: 300px;
+	margin: auto;
 }
 
 .button{
-	background-color: salmon; 
 	color: white; 
 	padding: 11px 15px; 
 	text-align: center; 
@@ -59,10 +78,7 @@ a:hover{
 	font-size: 16px;  
 	font-weight: 600;
 	display: block;
-	margin: auto;
 	width: auto;
-	border-radius: 4px;
-	max-width: 300px;
 }
 
 .button:hover{
@@ -76,25 +92,24 @@ a:hover{
 	animation: AnimationName 5s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+.colButton:hover{
+	color: white;
+	background: linear-gradient(270deg, salmon, #4995FC);
+	background-size: 400% 400%;
+
+	-webkit-animation: AnimationName 5s ease infinite;
+	-moz-animation: AnimationName 5s ease infinite;
+	-o-animation: AnimationName 5s ease infinite;
+	animation: AnimationName 5s ease infinite;
 }
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+
+.colButton{
+	background-color: #4995FC; 
+	margin: 0 auto;
+	border-radius: 10px;
+	max-width: 150px;
+	position: absolute;
+	top: 63%; left: 0; bottom: 26%; right: 0;
 }
 
 .splashtext{
@@ -115,18 +130,11 @@ a:hover{
 .navbar-nav > li > a {padding-top:20px !important; padding-bottom:20px !important;}
 
 .navbar-fixed-top {
-    min-height: 40px !important;/* Whatever you want. */
+    min-height: 40px !important;
 }
 
 #languages{
-	/*
-	background-image: url(../images/index/html5.png);
-	*/
 	background: ghostwhite;
-}
-
-.lang_imgs{
-	/*height: 200px;*/
 }
 
 .imgSpiral1{
@@ -171,34 +179,6 @@ a:hover{
 .splashCol3{
 	background-image: url(../images/index/code_blur.jpg);
 	background-position: right top;
-}
-
-.colButton{
-	background-color: #4995FC; 
-	color: white; 
-	padding: 11px 15px; 
-	text-align: center; 
-	text-decoration: none; 
-	font-size: 16px;  
-	font-weight: 600;
-	display: block;
-	margin: 0 auto;
-	width: auto;
-	border-radius: 10px;
-	max-width: 150px;
-	position: absolute;
-	top: 63%; left: 0; bottom: 26%; right: 0;
-}
-
-.colButton:hover{
-	color: white;
-	background: linear-gradient(270deg, salmon, #4995FC);
-	background-size: 400% 400%;
-
-	-webkit-animation: AnimationName 5s ease infinite;
-	-moz-animation: AnimationName 5s ease infinite;
-	-o-animation: AnimationName 5s ease infinite;
-	animation: AnimationName 5s ease infinite;
 }
 
 .socialImage{
@@ -280,17 +260,25 @@ a:hover{
     border-right: 1px solid #ccc;
 }
 
-footer{
-	text-align: center;
-	color: dimgrey;
-	
-	padding-top: 40px;
-	padding-bottom: 40px;
-	
-	background: lightgrey; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(white, lightgrey, dimgrey); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(white, lightgrey, dimgrey); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(white, lightgrey, dimgrey); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(white, lightgrey, dimgrey); /* Standard syntax */
+/* ANIMATIONS */
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
