@@ -11,10 +11,8 @@ h1{
 footer{
 	text-align: center;
 	color: dimgrey;
-	
 	padding-top: 40px;
 	padding-bottom: 40px;
-	
 	background: lightgrey; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(white, lightgrey, dimgrey); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(white, lightgrey, dimgrey); /* For Opera 11.1 to 12.0 */
@@ -46,13 +44,8 @@ a:hover{
 }
 
 .splash{
-	background-image: url(../images/index/pixel_splash.jpg);
-    height: 380px;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: right top;
-	/* Parallax effect */
-	/*transform: translateZ(-1px) scale(2);*/
+	height: 380px;
+	background: url(../images/index/pixel_splash.jpg) no-repeat fixed right top;
 }
 
 .splashbanner{
@@ -137,15 +130,6 @@ a:hover{
 	background: ghostwhite;
 }
 
-.imgSpiral1{
-	background-image: url(../images/index/html5.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: right top;
-	-webkit-clip-path: polygon(30% 0, 100% 0%, 29% 100%, 0% 100%);
-	clip-path: polygon(30% 0, 100% 0%, 29% 100%, 0% 100%);
-}
-
 .colh1{
 	font-size: 45px;
 	color: white;
@@ -163,9 +147,7 @@ a:hover{
 	padding-left: 25px;
 	padding-right: 25px;
 	height: 380px;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: left top;
+	background: no-repeat fixed left top;
 }
 
 .splashCol1{
@@ -177,8 +159,7 @@ a:hover{
 }
 
 .splashCol3{
-	background-image: url(../images/index/code_blur.jpg);
-	background-position: right top;
+	background: url(../images/index/code_blur.jpg) right top;
 }
 
 .socialImage{
@@ -207,10 +188,7 @@ a:hover{
 }
 
 .aboutp{
-	padding-top: 10px;
-	padding-left:30px;
-	padding-right:30px;
-	padding-bottom: 15px;
+	padding: 10px 30px 15px;
 }
 
 .presImage{
@@ -259,6 +237,17 @@ a:hover{
 .col-xs-3:not(:last-child) {
     border-right: 1px solid #ccc;
 }
+
+.bungeeFont{
+	font-family: 'Bungee Hairline', cursive;
+	font-size: 80px;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+
 
 /* ANIMATIONS */
 @-webkit-keyframes AnimationName {
