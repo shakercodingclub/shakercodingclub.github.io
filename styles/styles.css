@@ -147,7 +147,10 @@ a:hover{
 	padding-left: 25px;
 	padding-right: 25px;
 	height: 380px;
-	background: no-repeat fixed left top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left top;
+	/*background: no-repeat fixed left top;*/
 }
 
 .splashCol1{
