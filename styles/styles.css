@@ -130,6 +130,12 @@ a:hover{
 	background: ghostwhite;
 }
 
+.contact{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+}
+
 .colh1{
 	font-size: 45px;
 	color: white;
@@ -253,13 +259,13 @@ a:hover{
 }
 
 .card{
-	background-color: rgba(99, 118, 157, 0.47);
+	background-color: rgba(166, 169, 169, 0.47);
 	color: black;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
-	/*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
 	width: 40%;
 	text-align: center;
@@ -270,7 +276,7 @@ a:hover{
 
 .card:hover {
 	background-color: #4995FC;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
 	padding-top: 30px;
 	padding-bottom: 30px;
 	transition: 0.3s;
