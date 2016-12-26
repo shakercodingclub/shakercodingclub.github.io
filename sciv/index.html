@@ -17,6 +17,7 @@
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
+
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
@@ -36,8 +37,6 @@
                     <ul class="dropdown-menu">
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">Gallery</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="../codestuffs/newbies">Newbie?</a></li>
                     </ul>
                 </li>
             </ul>
@@ -47,11 +46,45 @@
         </div>
     </nav>
     <div class="container-fluid">
-        <div class="scivsplash blur"></div>
+        <div class="container-fluid row scivsplash white"></div>
         <div class="container-fluid content">
-            <h1 class="bungeeOutline"><b>Shaker Coding Club Coding Competition</b></h1>
+            <h1 class="bungeeFont white">Shaker Coding Club</h1>
+            <h1 class="bungeeFont white">Coding Competition</h1>
+            <div class="containter content">
+                <!--<div class="col-md-6">-->
+                    <!--<p class="white">-->
+                        <!--Shaker Coding Club is a space for programmers and tech enthusiasts of all backgrounds and skill levels to learn new and exciting things. Take part in beginner coding sessions, spontaneous group projects and guest programmer workshops as a member of one of the fastest growing clubs at Shaker High School!-->
+                    <!--</p>-->
+                <!--</div>-->
+                <!--<div class="col-md-6">-->
+                    <!--<iframe width="600" height="355" src="https://www.youtube.com/embed/p1UmoELah8M" frameborder="0" allowfullscreen></iframe>-->
+                <!--</div>-->
+            <!--</div>-->
+                <div class="container">
+                <form method="POST" action="http://formspree.io/lukas@shaker.codes">
+                    <div class="form-group">
+                        <label for="teamName">Team Name:</label>
+                        <textarea class="form-control" name="team" id="teamName" rows="1" placeholder="Enter team name" aria-describedby="teamName"></textarea>
+                    </div>
+                    <div class="form-group contact">
+                        <label for="InputEmail">Email Address</label>
+                        <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Message:</label>
+                        <textarea class="form-control" name="message" id="exampleTextarea" rows="3" placeholder="Enter message" aria-describedby="messageHelp"></textarea>
+                        <small id="messageHelp" class="form-text text-muted">We'll get back to you as soon as possible.</small>
+                    </div>
+                    <input type="hidden" name="_next" value="contact/success.html" />
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                </div>
         </div>
-        <div class="row"></div>
+        <div class="row">
+
+        </div>
+    </div>
     </div>
 </body>
 </html>

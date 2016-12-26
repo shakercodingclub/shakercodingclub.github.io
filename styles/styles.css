@@ -8,6 +8,8 @@ h1{
 	color: black;
 }
 
+
+
 footer{
 	text-align: center;
 	color: dimgrey;
@@ -116,6 +118,10 @@ a:hover{
 	top: 63%; left: 0; bottom: 26%; right: 0;
 }
 
+.blockCenter{
+	margin: 0 auto;
+}
+
 .splashtext{
 	font-size: 30px;
 	color: white;
@@ -214,15 +220,10 @@ a:hover{
 }
 
 .presImage{
-	display: inline-block;
-	position: relative;
-	top: -35px;
-	left: 15%;
     margin-left: auto;
     margin-right: auto;
 	height: 120px;
 	width: 120px;
-	
 }
 
 .whoAreWe{
@@ -266,6 +267,10 @@ a:hover{
 	text-align: center;
 }
 
+.white{
+	color: white;
+}
+
 .bungee{
 	font-family: 'Bungee', cursive;
 	font-size: 80px;
@@ -283,29 +288,51 @@ a:hover{
 }
 
 .scivsplash{
-	background-image: url(../sciv/motherboard.svg);
-
-}
-
-.blur{
 	width:100%;
 	height:100%;
 	position: absolute;
 	background-size:cover;
-	-webkit-filter: blur(6px);
-	-moz-filter: blur(6px);
-	-ms-filter: blur(6px);
-	-o-filter: blur(6px);
-	filter: blur(6px);
+	background-image: url(../sciv/geometry2.png);
+}
+
+
+.scivnavbar{
+	background-color: rgba(0,0,0,0);
+	position: relative;
+	z-index: 202020;
+}
+
+.the-scivbar{
+	background-color: rgba(0,0,0,0);
+	position:fixed;
+	border-color: #e7e7e7;
+	z-index: 202020;
+	width: 100%;
+}
+
+.blur{
+	position: fixed;
+	top:0;
+	width: 100%;
+	min-height: 50px;
+	margin-bottom: 20px;
+	background: rgba(0,0,0,.4);
+	z-index:1010;
+	-webkit-filter: blur(20px);
+	-moz-filter: blur(20px);
+	-o-filter: blur(20px);
+	-ms-filter: blur(20px);
+	filter: blur(20px);
 }
 
 .content{
+	padding-top: 50px;
 	position: relative;
 	/*background-color:red;*/
 }
 
 .card{
-	background-color: rgba(166, 169, 169, 0.47);
+	background-color: rgba(188, 191, 191, 0.47);
 	color: black;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -329,12 +356,26 @@ a:hover{
 	color: white;
 }
 
-.cardImage{
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 20px;
+.noVmargins{
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
+.cardImage{
+	height: 220px;
+	width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition:0.3s;
+}
+
+.card:hover > .cardImage{
+	transition: 0.3s;
+	height: 230px;
+	width: 230px;
+}
 
 /* ANIMATIONS */
 @-webkit-keyframes AnimationName {
