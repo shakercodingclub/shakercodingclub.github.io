@@ -1,2 +1,2 @@
 # shakercodingclub.github.io
-Shaker Coding Club website (woop woop)
+If you're an SCC member and would like to contribute to this repository, just shoot an email to lukas@shaker.codes
