@@ -198,6 +198,10 @@ a:hover{
 	background-position: right top;
 }
 
+#sciv{
+	background-color: black;
+}
+
 .socialImage{
 	height: 70px;
 	width: 70px;
@@ -322,12 +326,27 @@ a:hover{
 	text-align: center;
 }
 
+.fillblack h1{
+	color:white;
+}
+
+.fillblack{
+	background-color: black;
+	padding-top: 50px;
+}
+
 .scivsplash{
-	width:100%;
-	height:100%;
-	position: absolute;
-	background-size:cover;
-	background-image: url(../sciv/geometry2.png);
+	width: 100%;
+	height: 0;
+	padding-bottom: 28%;
+	background: url(../sciv/mesh.png) no-repeat;
+	background-size: 100%;
+	padding-right:0;
+	margin: auto;
+}
+
+.fillblack > .container > p{
+	color: white;
 }
 
 .scivnavbar{
@@ -362,6 +381,11 @@ a:hover{
 .content{
 	padding-top: 50px;
 	position: relative;
+}
+
+.bungeeH4{
+	font-family: 'Bungee Hairline', cursive;
+	text-align: center;
 }
 
 .card_dead{
@@ -442,7 +466,9 @@ a:hover{
 	/*margin-bottom: 20px;*/
 	transition:.4s;
 }
-
+.vspace_sciv{
+	padding-top:65px;
+}
 .vspace_rtd{
 	padding-top:18%;
 }

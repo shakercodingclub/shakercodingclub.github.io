@@ -1,91 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../favicon.gif">
-    <title>SC^iv</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="navbar-header">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../favicon.gif">
+        <title>SC^iv</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="customNav.css">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
+        <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="sciv">
+        <script type="text/javascript" src="../scripts/reminduser.js"></script>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href=".."><img class="logo" src="../logo_t.gif" height="50px"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="..">Home</a></li>
-                <li><a href="../calendar">Calendar</a></li>
-                <li><a href="../mentors">Mentors</a></li>
-                <li><a href="../contact">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Codestuffs<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://github.com/shakercodingclub">Projects</a></li>
-                        <li><a href="http://shakercodingclub.pixieset.com/shakercodingclub/">Gallery</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="linkpad"><a href="../signup">Sign Up</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="container-fluid row white"></div>
-        <div class="container-fluid content">
-            <h1 class="bungeeFont white">Shaker Coding Club</h1>
-            <h1 class="bungeeFont white">Coding Competition</h1>
-            <div class="containter content">
-                <!--<div class="col-md-6">-->
-                    <!--<p class="white">-->
-                        <!--Shaker Coding Club is a space for programmers and tech enthusiasts of all backgrounds and skill levels to learn new and exciting things. Take part in beginner coding sessions, spontaneous group projects and guest programmer workshops as a member of one of the fastest growing clubs at Shaker High School!-->
-                    <!--</p>-->
-                <!--</div>-->
-                <!--<div class="col-md-6">-->
-                    <!--<iframe width="600" height="355" src="https://www.youtube.com/embed/p1UmoELah8M" frameborder="0" allowfullscreen></iframe>-->
-                <!--</div>-->
-            <!--</div>-->
-                <h1 class="bungeeFont">Hi. This page is under construction. Signing up now will do you nothing.</h1>
-                <div class="container">
-                <form method="POST" action="http://formspree.io/lukas@shaker.codes">
-                    <div class="form-group">
-                        <label for="teamName">Team Name:</label>
-                        <textarea class="form-control" name="team" id="teamName" rows="1" placeholder="Enter team name" aria-describedby="teamName"></textarea>
-                    </div>
-                    <div class="form-group contact">
-                        <label for="InputEmail">Email Address</label>
-                        <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleTextarea">Message:</label>
-                        <textarea class="form-control" name="message" id="exampleTextarea" rows="3" placeholder="Enter message" aria-describedby="messageHelp"></textarea>
-                        <small id="messageHelp" class="form-text text-muted">We'll get back to you as soon as possible.</small>
-                    </div>
-                    <input type="hidden" name="_next" value="contact/success.html" />
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=".."><img class="logo" src="../logo_t.gif" height="50px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="..">Home</a></li>
+                    <li><a href="../calendar">Calendar</a></li>
+                    <li><a href="../mentors">Mentors</a></li>
+                    <li><a href="../contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Codestuffs<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://github.com/shakercodingclub">Projects</a></li>
+                            <li><a href="http://shakercodingclub.pixieset.com/shakercodingclub/">Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="linkpad"><a href="../signup">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fillblack">
+            <div class="container">
+                <div class="col-lg-2 col-md-0">
+                    <div class="vspace_sciv visible-xl-block visible-lg-block"></div>
+                    <img src="sciv_logo.png" class="img-responsive blockCenter visible-sm-block visible-xs-block" height="200" width="200">
+                   <!--No logo for md screens because Bootstrap is funky-->
+                    <img src="sciv_logo.png" class="img-responsive blockCenter visible-lg-block" height="400" width="400">
                 </div>
+                <div class="col-md-12 col-lg-10">
+                    <h1 class="bungeeFont">Shaker Coding Club</h1>
+                    <h1 class="bungeeFont">Coding Competition</h1>
+                </div>
+            </div>
+            <div class="suspense textCenter">
+                <h4 class="bungeeH4">Details and Signups go live 01/18/2017</h4>
+                <span class="addtocalendar atc-style-blue">
+                    <a class="atcb-link">Remind Me</a>
+                    <var class="atc_event">
+                        <var class="atc_date_start">2016-01-18 12:00:00</var>
+                        <var class="atc_date_end">2017-05-04 18:00:00</var>
+                        <var class="atc_timezone">America/New_York</var>
+                        <var class="atc_title">Sign up for Shaker's Coding Competition!</var>
+                        <var class="atc_description">May the force be with you.</var>
+                        <var class="atc_location">shaker.codes/sciv/</var>
+                        <var class="atc_organizer">Shaker Coding Club</var>
+                        <var class="atc_organizer_email">contact@shaker.codes</var>
+                    </var>
+                </span>
+            </div>
+            <div class="container scivsplash"></div>
         </div>
-        <div class="row">
-
-        </div>
-    </div>
-    </div>
-</body>
+    </body>
 </html>
