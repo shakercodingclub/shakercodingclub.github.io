@@ -24,10 +24,10 @@ footer{
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background: lightgrey; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(white, lightgrey, dimgrey); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(white, lightgrey, dimgrey); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(white, lightgrey, dimgrey); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(white, lightgrey, dimgrey); /* Standard syntax */
+    background: -webkit-linear-gradient(white, lightgrey, #868686); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(white, lightgrey, #868686); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(white, lightgrey, #868686); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(white, lightgrey, #868686); /* Standard syntax */
 }
 
 a:hover{
@@ -222,6 +222,16 @@ a:hover{
 	margin-top:20px;
 }
 
+.scivtext{
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.deskspace{
+
+	padding-bottom:300px;
+}
 .stick_margins{
 	margin-right:35px;
 	margin-left:0px;
