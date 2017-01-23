@@ -369,14 +369,14 @@ a:hover{
 	background: -webkit-linear-gradient(170deg, #00043E, black); /* For Safari 5.1 to 6.0 */
 	background: -o-linear-gradient(170deg, #00043E, black); /* For Opera 11.1 to 12.0 */
 	background: -moz-linear-gradient(170deg, #00043E, black); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(190deg, #00032e, black); /* Standard syntax (must be last) */
+	background: linear-gradient(170deg, #00043E, black); /* Standard syntax (must be last) */
 }
 
 .scivsplash{
 	width: 100%;
 	height: 0;
 	padding-bottom: 28%;
-	background: url(../sciv/mesh2.png) no-repeat;
+	background: url(../sciv/mesh.png) no-repeat;
 	background-size: 100%;
 	padding-right:0;
 	margin: auto;
