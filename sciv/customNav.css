@@ -97,3 +97,9 @@ h4{
 	-o-animation: AnimationName 5s ease infinite;
 	animation: AnimationName 5s ease infinite;
 }
+
+.atc_mock{
+	position: relative;
+	display: inline-block;
+	background: transparent!important;
+}
