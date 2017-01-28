@@ -77,15 +77,23 @@ h4{
 	padding-bottom: 40px;
 }
 
-/*button.btn.collapsed:before*/
-/*{*/
-	/*content:'+' ;*/
-	/*display:block;*/
-	/*width:15px;*/
-/*}*/
-/*button.btn:before*/
-/*{*/
-	/*content:'-' ;*/
-	/*display:block;*/
-	/*width:15px;*/
-/*}*/
+.colButton_dead{
+	color:white;
+	background-color: #4995FC;
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.colButton_dead:hover{
+	color: white;
+	background: linear-gradient(270deg, salmon, #4995FC);
+	background-size: 400% 400%;
+
+	-webkit-animation: AnimationName 5s ease infinite;
+	-moz-animation: AnimationName 5s ease infinite;
+	-o-animation: AnimationName 5s ease infinite;
+	animation: AnimationName 5s ease infinite;
+}
