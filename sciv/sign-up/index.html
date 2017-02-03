@@ -31,7 +31,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="../..">Home</a></li>
+                    <li><a href="http://shaker.codes">Home</a></li>
                     <li><a href="../../calendar">Calendar</a></li>
                     <li><a href="../../mentors">Mentors</a></li>
                     <li><a href="../../contact">Contact</a></li>
@@ -54,19 +54,8 @@
                 <img src="../sciv_logo.png" class="img-responsive blockCenter visible-lg-block" height="400" width="400">
             </div>
             <div class="container blockCenter">
-                <script type="text/javascript">
-                    var chkbox = $("#check"),
-                        button = $("#del_event");
-                    button.attr("disabled","disabled");
-                    chkbox.change(function(){
-                        if(this.checked){
-                            button.removeAttr("disabled");
-                        }else{
-                            button.attr("disabled","disabled");
-                        }
-                    });
-                </script>
-                    <p class="bungeeFont textCenter blockCenter white">4 people per team<br>$5.00 per person</p>
+                    <p class="bungeeFont textCenter blockCenter white visible-lg-block visible-md-block">4 people per team<br>$5.00 per person</p>
+                <h1 class="bungeeSM textCenter blockCenter white visible-sm-block visible-xs-block">4 people per team<br>$5.00 per person</h1>
                 <p class="white contact">Before signing up, make sure that your math or computer science teacher has completed the <a href="sciv_Teacher_Directions.pdf">SC^iv Directions for Teachers</a> (PDF).
                     If your teacher has not followed these instructions, <b>your team will be unable to participate</b>. For admissions, simply give your admission
                     fee of $20.00 (in cash) to your math or computer science teacher at any point before the competition. Teams that do not pay the admission fee will
@@ -97,28 +86,24 @@
                             <option value = "Troy HS">Troy High School</option>
                         </select>
                     </div>
-
                     <div class="form-group">
                         <label for="TeamName" class="white">Team Name</label>
                         <input type="" name="Team Name" class="form-control" id="TeamName" aria-describedby="TeamHelp" placeholder="Try Hard, Catch Harder">
-                        <small id="TeamHelp" class="form-text text-muted">You can bet your bits there'll be an award for best name.</small>
+                        <small id="TeamHelp" class="form-text text-muted">You can bet your bits there'll be an award for best team name.</small>
                     </div>
-
                     <div class="form-group">
                         <label for="TeamName" class="white">Team Member Names:</label>
                         <input type="" name="Member 1" class="form-control" id="TeamName1" aria-describedby="NameHelp" placeholder="Luke Skywalker">
                         <input type="" name="Member 2" class="form-control" id="TeamName2" aria-describedby="NameHelp" placeholder="Han Solo">
                         <input type="" name="Member 3" class="form-control" id="TeamName3" aria-describedby="NameHelp" placeholder="Obi-Wan Kenobi">
                         <input type="" name="Member 4" class="form-control" id="TeamName4" aria-describedby="NameHelp" placeholder="Leia Organa">
-                        <small id="NameHelp" class="form-text text-muted">Spell it right. You might win something.</small>
+                        <small id="NameHelp" class="form-text text-muted">Sorry, no award for best member name.</small>
                     </div>
-
                     <div class="form-group">
                         <label for="InputEmail" class="white">Email Address</label>
                         <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                         <small id="emailHelp" class="form-text text-muted">We'll contact you if something comes up.</small>
                     </div>
-
                     <input type="hidden" name="_next" value="sciv/sign-up/success.html" />
                     <button id="del_event" type="submit" class="btn btn-primary header_margins">Sign Up</button>
                 </form>
