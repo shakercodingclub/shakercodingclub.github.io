@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../../favicon.gif">
+        <title>SC^iv</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../../styles/styles.css">
+        <link rel="stylesheet" href="../customNav.css">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Outline" rel="stylesheet">
+        <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+    </head>
+    <body id="sciv">
+        <script type="text/javascript" src="../../scripts/reminduser.js"></script>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=".."><img class="logo" src="../../logo_t.gif" height="50px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="..">Home</a></li>
+                    <li><a href="../../calendar">Calendar</a></li>
+                    <li><a href="../../mentors">Mentors</a></li>
+                    <li><a href="../../contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Codestuffs<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://github.com/shakercodingclub">Projects</a></li>
+                            <li><a href="http://shakercodingclub.pixieset.com/shakercodingclub/">Gallery</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="linkpad"><a href="../../signup">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fillblack">
+            <div class="container">
+                <img src="../sciv_logo.png" class="img-responsive blockCenter visible-sm-block visible-xs-block" height="200" width="200">
+                <img src="../sciv_logo.png" class="img-responsive blockCenter visible-lg-block" height="400" width="400">
+            </div>
+            <div class="container blockCenter">
+                <script type="text/javascript">
+                    var chkbox = $("#check"),
+                        button = $("#del_event");
+                    button.attr("disabled","disabled");
+                    chkbox.change(function(){
+                        if(this.checked){
+                            button.removeAttr("disabled");
+                        }else{
+                            button.attr("disabled","disabled");
+                        }
+                    });
+                </script>
+                    <p class="bungeeFont textCenter blockCenter white">4 people per team<br>$5.00 per person</p>
+                <p class="white contact">Before signing up, make sure that your math or computer science teacher has completed the <a href="sciv_Teacher_Directions.pdf">SC^iv Directions for Teachers</a> (PDF).
+                    If your teacher has not followed these instructions, <b>your team will be unable to participate</b>. For admissions, simply give your admission
+                    fee of $20.00 (in cash) to your math or computer science teacher at any point before the competition. Teams that do not pay the admission fee will
+                        be <b>unable to participate.</b> If more teams sign up than Shaker Coding Club can accommodate, <b>preference will be given to teams that sign up first</b>,
+                    so sign up fast!</p>
+                <form method="POST" class="contact" action="http://formspree.io/contact@shaker.codes">
+                    <label for="schools" class="white">Team School</label>
+                    <div class="form-group">
+                        <select id="schools">
+                            <option value = "ACADEMY">The Albany Academies</option>
+                            <option value = "ALBHS">Albany High School</option>
+                            <option value = "APHS">Averill Park High School</option>
+                            <option value = "BSHS">Ballston Spa High School</option>
+                            <option value = "BHS">Bethlehem High School</option>
+                            <option value = "BHHS">Burnt Hills-Ballson Lake High School</option>
+                            <option value = "CBA">Christian Brothers Academy</option>
+                            <option value = "COLONIE">Colonie High School</option>
+                            <option value = "COLUMBIA">Columbia High School</option>
+                            <option value = "GUILDER">Guilderland High School</option>
+                            <option value = "LSI">La Salle Institute</option>
+                            <option value = "MOHON">Mohonasen High School</option>
+                            <option value = "NISKY">Niskayuna High School</option>
+                            <option value = "SARATO">Saratoga Springs High School</option>
+                            <option value = "SCHENHS">Schenectady High School</option>
+                            <option value = "SHS">Shaker High School</option>
+                            <option value = "SHEN">Shenendehowa High School</option>
+                            <option value = "TROY">Troy High School</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="TeamName" class="white">Team Name</label>
+                        <input type="" name="name" class="form-control" id="TeamName" aria-describedby="TeamHelp" placeholder="Try Hard, Catch Harder">
+                        <small id="TeamHelp" class="form-text text-muted">You can bet your bits there'll be an award for best name.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="TeamName" class="white">Team Member Names:</label>
+                        <input type="" name="name1" class="form-control" id="TeamName1" aria-describedby="NameHelp" placeholder="Luke Skywalker">
+                        <input type="" name="name2" class="form-control" id="TeamName2" aria-describedby="NameHelp" placeholder="Han Solo">
+                        <input type="" name="name3" class="form-control" id="TeamName3" aria-describedby="NameHelp" placeholder="Obi-Wan Kenobi">
+                        <input type="" name="name4" class="form-control" id="TeamName4" aria-describedby="NameHelp" placeholder="Leia Organa">
+                        <small id="NameHelp" class="form-text text-muted">Spell it right. You might win something.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="InputEmail" class="white">Email Address</label>
+                        <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll send a confirmation email when your form is processed.</small>
+                    </div>
+
+                    <input type="hidden" name="_next" value="contact/success.html" />
+                    <button id="del_event" type="submit" class="btn btn-primary header_margins">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
